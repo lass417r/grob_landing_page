@@ -1,3 +1,8 @@
+/* body {
+  background-image: url(/medium/baggrund1.png);
+  background-size: cover;
+} */
+
 /* GRID MAIN START */
 main {
 }
@@ -71,7 +76,7 @@ button {
 .bounce {
   position: absolute;
   left: 50%;
-  top: 75%;
+  top: 85%;
   margin-top: -25px;
   margin-left: -25px;
   height: 50px;
@@ -100,6 +105,14 @@ button {
 @media (min-width: 600px) {
   #section_1 {
     margin-top: 5%;
+    height: 100vh;
+  }
+  #section_1 * {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  #section_1 button {
+    margin-top: 5%;
   }
   #section_2 {
     margin-top: 30%;
@@ -110,7 +123,6 @@ button {
 @media (max-width: 600px) {
   #section_1 {
     margin-top: 5%;
-    /* height: 100vw; */
   }
   #section_1 * {
     margin-top: 2%;
@@ -122,5 +134,34 @@ button {
 
   .bounce {
     top: 85%;
+  }
 }
 /* Section 1&2 Mobile SLUT */
+
+/* Footer START */
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.h1_footer {
+  font-weight: bold;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(105%);
+  }
+  110% {
+    transform: scale(100%);
+  }
+}
+/* Footer SLUT */
+
+/* SPLASH START */
+
+/* SPLASH SLUT */
