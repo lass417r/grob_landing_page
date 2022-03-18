@@ -1,9 +1,9 @@
-/* * {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
-} */
+}
 
 /* Sætter grid på vores main, så vi kan placerer indholdet i midten */
 @media (min-width: 600px) {

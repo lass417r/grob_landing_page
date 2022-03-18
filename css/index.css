@@ -10,6 +10,10 @@ header {
 }
 /* SPLASH SLUT */
 
+body {
+  background-color: #3e3e3e;
+}
+
 /* GRID MAIN START */
 main {
 }
@@ -85,10 +89,13 @@ button {
 
 /* Arrow og bounce effekt START */
 #arrow1 {
-  top: 75%;
+  top: 85%;
 }
 #arrow2 {
-  top: 155%;
+  top: 175%;
+}
+#arrow3 {
+  top: 270%;
 }
 
 .bounce {
@@ -132,7 +139,7 @@ button {
     margin-top: 5%;
   }
   #section_2 {
-    margin-top: 30%;
+    margin-top: 10%;
   }
 }
 /* Section 1&2 WEB SLUT */
@@ -179,6 +186,43 @@ button {
 }
 /* Footer SLUT */
 
-/* SPLASH START */
+/* Lykkehjul START */
+.skjult {
+  display: none;
+}
 
-/* SPLASH SLUT */
+#email {
+  background-color: gray;
+  padding: 2rem;
+  z-index: 22;
+}
+#section_lykkehjul {
+  width: 100%;
+  height: 80vh;
+  margin-top: 20%;
+}
+.lykkehjulet {
+  display: flex;
+  justify-content: center;
+}
+#lykkehjul_skive {
+  position: absolute;
+  z-index: 3;
+  transition: all ease 5s;
+}
+#lykkehjul_pil {
+  position: absolute;
+  z-index: 5;
+}
+
+/* <div class="lykkehjulet">
+<img
+  src="medium/pil-01.svg"
+  alt="Pil"
+  id="lykkehjul_pil"
+  class="lykkehjul"
+/>
+<img src="medium/lykkehjul-01.svg" alt="Lykkehjul"
+id="lykkehjul_skive" class="lykkehjul"//>
+</div> */
+/* Lykkehjul SLUT */
