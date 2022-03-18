@@ -28,6 +28,25 @@ p {
 h2 {
   margin-bottom: 1rem;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: apparat heavy, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+}
+
+p {
+  font-family: apparat, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  padding-top: 1.5%;
+}
+
 /* FONT OG FARVER SLUT */
 
 /* Scroll behavior */

@@ -192,10 +192,19 @@ button {
 }
 
 #email {
-  background-color: gray;
-  padding: 2rem;
+  top: 238%;
+  position: absolute;
   z-index: 22;
+  background-color: rgba(39, 39, 181, 70%);
 }
+
+#email_imput {
+  padding: 2rem;
+}
+#email_imput * {
+  margin: 1%;
+}
+
 #section_lykkehjul {
   width: 100%;
   height: 80vh;
@@ -206,11 +215,15 @@ button {
   justify-content: center;
 }
 #lykkehjul_skive {
+  width: 55%;
+  height: auto;
   position: absolute;
   z-index: 3;
   transition: all ease 5s;
 }
 #lykkehjul_pil {
+  width: 50%;
+  height: auto;
   position: absolute;
   z-index: 5;
 }
