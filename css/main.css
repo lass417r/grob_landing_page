@@ -6,15 +6,17 @@
 }
 
 /* Sætter grid på vores main, så vi kan placerer indholdet i midten */
-@media (min-width: 600px) {
-  main {
+@media (min-width: 700px) {
+  main,
+  footer {
     max-width: 960px;
     margin: auto;
   }
 }
 /* Sætter grid på vores main, så vi kan placerer indholdet i midten */
-@media (max-width: 600px) {
-  main {
+@media (max-width: 700px) {
+  main,
+  footer {
     max-width: 90%;
     margin: auto;
   }
