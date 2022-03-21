@@ -58,6 +58,10 @@ main {
     display: flex;
     justify-content: center;
   }
+  #section_lykkehjul {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
 }
 /* GRID WEB SLUT */
 
@@ -89,13 +93,7 @@ button {
 
 /* Arrow og bounce effekt START */
 #arrow1 {
-  top: 85%;
-}
-#arrow2 {
-  top: 175%;
-}
-#arrow3 {
-  top: 270%;
+  padding: 0;
 }
 
 .bounce {
@@ -105,8 +103,6 @@ button {
   margin-left: -25px;
   height: 50px;
   width: 50px;
-  /* background-image: url(/medium/arrow2.png);
-  background-size: 100% auto; */
   animation: bounce 1s infinite;
 }
 
@@ -143,6 +139,7 @@ button {
   }
 }
 /* Section 1&2 WEB SLUT */
+
 /* Section 1&2 Mobile START */
 @media (max-width: 600px) {
   #section_1 {
@@ -155,7 +152,6 @@ button {
   #section_2 {
     margin-top: 30%;
   }
-
   .bounce {
     top: 85%;
   }
@@ -170,6 +166,8 @@ button {
   margin-bottom: 2rem;
 }
 .h1_footer {
+  font-size: 1vw;
+  text-align: center;
   font-weight: bold;
   animation: pulse 2s infinite;
 }
@@ -189,13 +187,6 @@ button {
 /* Lykkehjul START */
 .skjult {
   display: none;
-}
-
-#email {
-  top: 238%;
-  position: absolute;
-  z-index: 22;
-  background-color: rgba(39, 39, 181, 70%);
 }
 
 #email_imput {
@@ -227,15 +218,36 @@ button {
   position: absolute;
   z-index: 5;
 }
-
-/* <div class="lykkehjulet">
-<img
-  src="medium/pil-01.svg"
-  alt="Pil"
-  id="lykkehjul_pil"
-  class="lykkehjul"
-/>
-<img src="medium/lykkehjul-01.svg" alt="Lykkehjul"
-id="lykkehjul_skive" class="lykkehjul"//>
-</div> */
 /* Lykkehjul SLUT */
+
+/* Menu START */
+/* Style the navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #34343464;
+}
+
+/* Navbar links */
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+/* Menu SLUT */

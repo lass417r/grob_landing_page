@@ -11,11 +11,19 @@
   </head>
   <body>
     <header>
+      <div id="navbar">
+        <a href="#STOP_3">Reklame film</a>
+        <a href="#STOP_2">Lykkehjul</a>
+        <a href="#STOP_1">Årskort</a>
+        <a href="https://www.grob.dk/">Teater Grob</a>
+      </div>
       <div id="splash">
-        <img
-          src="medium/275885546_546273790002452_1288888065826114261_n.png"
-          alt="splash"
-        />
+        <img src="medium/splash_try.png" alt="splash" />
+      </div>
+      <div id="arrow_index">
+        <a href="#STOP_1" class="bounce" id="arrow1"
+          ><img src="medium/white_arrow.png" alt="arrow"
+        /></a>
       </div>
     </header>
     <main>
@@ -41,57 +49,42 @@
             <button>KØB NU</button>
           </div>
           <div id="section_1_højre">
-            <img
-              src="medium/275999195_526068822246663_135996986866366682_n.png"
-              alt="Grob årskort"
-            />
+            <img src="medium/aarskort_mockup_try.png" alt="Grob årskort" />
           </div>
-        </div>
-        <div id="arrow_index">
-          <a href="#STOP_1" class="bounce" id="arrow1"
-            ><img src="medium/white_arrow.png" alt="arrow"
-          /></a>
-        </div>
-        <div id="arrow_index">
-          <a href="#STOP_2" class="bounce" id="arrow2"
-            ><img src="medium/arrow2.png" alt="arrow"
-          /></a>
         </div>
       </section>
       <div id="STOP_2"></div>
       <section id="section_lykkehjul">
-        <h2>Tilmeld dig vores nyhedsbrev og prøv lykkehjulet</h2>
-
-        <div class="lykkehjulet">
-          <div id="email">
-            <div id="email_imput">
-              <form action="">
-                <label for="Name">Indtast dit navn</label><br />
-                <input type="text" /><br />
-                <label for="Email">Indtast din Email</label><br />
-                <input type="text" /><br />
-              </form>
-              <button id="spin_knap">SPIN</button>
-            </div>
+        <div id="email">
+          <h2>TILMELD EMAIL OG PRØV LYKKEHJULET</h2>
+          <div id="email_imput">
+            <form action="">
+              <label for="Name">Indtast dit navn</label><br />
+              <input type="text" /><br />
+              <label for="Email">Indtast din Email</label><br />
+              <input type="text" /><br />
+            </form>
+            <button id="spin_knap">SPIN</button>
           </div>
+        </div>
+        <div class="lykkehjulet">
           <img
             src="medium/pin.svg"
             alt="Pil"
             id="lykkehjul_pil"
             class="lykkehjul"
           />
-          <img src="medium/Artboard-2.svg" alt="Lykkehjul" id="lykkehjul_skive"
-          class="lykkehjul"//>
-        </div>
-        <div id="arrow_index">
-          <a href="#STOP_3" class="bounce" id="arrow3"
-            ><img src="medium/arrow2.png" alt="arrow"
-          /></a>
+          <img
+            src="medium/Artboard-2.svg"
+            alt="Lykkehjul"
+            id="lykkehjul_skive"
+            class="lykkehjul"
+          />
         </div>
       </section>
       <div id="STOP_3"></div>
       <section id="section_2">
-        <h2>Se vores sprøde video her!</h2>
+        <h2>SE VORES REKLAME</h2>
 
         <div id="video">
           <video controls src="medium/udkast til filmen4.mp4"></video>
@@ -100,7 +93,8 @@
     </main>
     <footer class="footer">
       <h3 class="h1_footer">
-        LAVET AF GR. 6 SOM EN CASE OPGAVE FOR TEATER GROB
+        LAVET AF GR. 6 SOM EN CASE <br />
+        OPGAVE FOR TEATER GROB
       </h3>
     </footer>
     <script src="lykkehjul.js"></script>
