@@ -35,6 +35,9 @@ main {
   #section_1_venstre {
     grid-row: 3/4;
   }
+  #arrow1 {
+    display: none;
+  }
 }
 /* GRID MOBIL SLUT */
 
@@ -61,6 +64,9 @@ main {
   #section_lykkehjul {
     display: grid;
     grid-template-columns: 1fr 2fr;
+  }
+  #arrow1 {
+    display: block;
   }
 }
 /* GRID WEB SLUT */
@@ -188,12 +194,16 @@ button {
 .skjult {
   display: none;
 }
-
-#email_imput {
-  padding: 2rem;
+#email h2 {
+  text-align: center;
 }
+
 #email_imput * {
-  margin: 1%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  outline: inherit;
 }
 
 #section_lykkehjul {
@@ -206,7 +216,7 @@ button {
   justify-content: center;
 }
 #lykkehjul_skive {
-  width: 55%;
+  width: 50%;
   height: auto;
   position: absolute;
   z-index: 3;
@@ -239,15 +249,5 @@ button {
   padding: 15px;
   padding-right: 20px;
   text-decoration: none;
-}
-
-/* Page content */
-.content {
-  padding: 16px;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
 }
 /* Menu SLUT */
