@@ -1,0 +1,37 @@
+#splash {
+  margin: 0;
+  padding: 0;
+  height: 50%;
+  overflow-x: hidden;
+}
+
+/* Centered text */
+.centreret {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  text-shadow: 3px 5px 2px #47474744, 2px 2px 14px #00000063;
+}
+
+@media (min-width: 700px) {
+  /* SPLASH START */
+  #splash img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* SPLASH SLUT */
+
+  /* Centered text */
+  .centreret {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6rem;
+    text-shadow: 3px 5px 2px #47474744, 2px 2px 14px #00000063;
+  }
+}
