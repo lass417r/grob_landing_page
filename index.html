@@ -11,12 +11,20 @@
   </head>
   <body>
     <header>
-      <div id="navbar">
-        <a href="#doku.html">Dokumentation</a>
-        <a href="#STOP_3">Reklame film</a>
-        <a href="#STOP_2">Lykkehjul</a>
-        <a href="#STOP_1">Årskort</a>
-      </div>
+      <nav>
+        <div id="menuknap" onclick="burgerMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <ul id="menuItems" class="hidden" onclick="zIndex()">
+          <li><a href="#STOP_1">Årskort</a></li>
+          <li><a href="#STOP_2">Lykkehjul</a></li>
+          <li><a href="#STOP_3">Reklame</a></li>
+          <li><a href="doku.html">Dokumentation</a></li>
+        </ul>
+      </nav>
+
       <div id="splash">
         <img src="medium/splash_try.png" alt="splash" />
       </div>
@@ -30,7 +38,7 @@
       <div id="STOP_1"></div>
       <section id="section_1">
         <div id="section_1_grid">
-          <h1>Årskort</h1>
+          <h1 style="gap: 0">Årskort</h1>
           <div id="section_1_venstre">
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed ipsa
@@ -52,11 +60,12 @@
             <img src="medium/aarskort_mockup_try.png" alt="Grob årskort" />
           </div>
         </div>
+        <div id="STOP_2"></div>
       </section>
-      <div id="STOP_2"></div>
+
       <section id="section_lykkehjul">
         <div id="email">
-          <h2>TILMELD EMAIL OG PRØV LYKKEHJULET</h2>
+          <h2>TILMELD DIN EMAIL OG PRØV LYKKEHJULET</h2>
           <div id="email_imput">
             <form action="#STOP_2" id="form-anchor">
               <input type="text" placeholder="Navn" /><br />
@@ -66,6 +75,7 @@
           </div>
         </div>
         <div class="lykkehjulet">
+          <div id="spacer_hjul"></div>
           <img
             src="medium/pin.svg"
             alt="Pil"
@@ -96,5 +106,6 @@
       </h3>
     </footer>
     <script src="lykkehjul.js"></script>
+    <script src="burger.js"></script>
   </body>
 </html>

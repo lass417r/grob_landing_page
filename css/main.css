@@ -53,3 +53,134 @@ p {
 html {
   scroll-behavior: smooth;
 }
+
+/* Nav START */
+nav {
+  text-align: center;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(0px);
+  pointer-events: none;
+}
+
+li {
+  list-style: none;
+  padding: 1.5vh;
+  margin: 30px;
+}
+
+nav ul {
+  position: fixed;
+  z-index: 99;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #3e3e3e;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#link {
+  color: #fff;
+}
+
+a {
+  font-size: 1rem;
+  padding: 1rem;
+  font-family: apparat heavy;
+  border-right-style: none;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#menuItems {
+  transition: transform 0.3s;
+}
+
+#menuknap {
+  position: fixed;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 87vw;
+  z-index: 100;
+}
+
+/* BURGERMENU KNAP START*/
+.bar1,
+.bar2,
+.bar3 {
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+  margin: 10px;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+/* BURGERMENU KNAP SLUT*/
+
+/* MENU WEB START*/
+@media (min-width: 700px) {
+  /* Navigation Web */
+  nav ul {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5rem;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    justify-content: end;
+    background-color: #34343464;
+  }
+
+  #menuknap {
+    display: none;
+  }
+
+  #menuItems {
+    list-style: none;
+    display: flex;
+    pointer-events: visible;
+  }
+
+  #menuItems.hidden {
+    opacity: 1;
+  }
+
+  li {
+    margin: 20px;
+    font-family: "Jura";
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+/* MENU WEB SLUT*/
+/* Nav SLUT */

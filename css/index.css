@@ -38,6 +38,9 @@ main {
   #arrow1 {
     display: none;
   }
+  main * {
+    padding: 0 1%;
+  }
 }
 /* GRID MOBIL SLUT */
 
@@ -64,6 +67,7 @@ main {
   #section_lykkehjul {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    justify-content: space-evenly;
   }
   #arrow1 {
     display: block;
@@ -128,7 +132,7 @@ button {
 /* Arrow og bounce effekt SLUT */
 
 /* Section 1&2 WEB START */
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   #section_1 {
     margin-top: 5%;
     height: 70vh;
@@ -147,7 +151,7 @@ button {
 /* Section 1&2 WEB SLUT */
 
 /* Section 1&2 Mobile START */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   #section_1 {
     margin-top: 5%;
   }
@@ -197,6 +201,11 @@ button {
 #email h2 {
   text-align: center;
 }
+#email {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
 
 #email_imput * {
   margin: 10px 0;
@@ -208,46 +217,25 @@ button {
 
 #section_lykkehjul {
   width: 100%;
-  height: 80vh;
-  margin-top: 20%;
 }
 .lykkehjulet {
   display: flex;
   justify-content: center;
 }
+
+#spacer_hjul {
+  height: 500px;
+  width: 500px;
+}
 #lykkehjul_skive {
-  width: 50%;
-  height: auto;
   position: absolute;
   z-index: 3;
   transition: all ease 5s;
 }
 #lykkehjul_pil {
-  width: 50%;
+  height: auto;
   height: auto;
   position: absolute;
   z-index: 5;
 }
 /* Lykkehjul SLUT */
-
-/* Menu START */
-/* Style the navbar */
-#navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  overflow: hidden;
-  background-color: #34343464;
-}
-
-/* Navbar links */
-#navbar a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 15px;
-  padding-right: 20px;
-  text-decoration: none;
-}
-/* Menu SLUT */
