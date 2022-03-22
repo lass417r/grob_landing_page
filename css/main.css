@@ -164,7 +164,11 @@ a {
   #menuItems {
     list-style: none;
     display: flex;
+    justify-content: space-between;
     pointer-events: visible;
+  }
+  #menuItems:first-child {
+    justify-content: start;
   }
 
   #menuItems.hidden {

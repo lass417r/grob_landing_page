@@ -14,14 +14,36 @@
 }
 /* SPLASH SLUT */
 /* LOGO START */
-#logo {
-  float: left;
-  height: 200%;
-  width: auto;
-  margin-bottom: 2rem;
+
+@media (min-width: 700px) {
+  #logo {
+    height: 2.5rem;
+    width: auto;
+  }
+  #logo_con {
+    display: flex;
+    align-items: center;
+    height: auto;
+    padding-left: 2rem;
+  }
+}
+@media (max-width: 700px) {
+  #logo {
+    height: 3.5rem;
+    width: auto;
+  }
+  #logo_con {
+    display: flex;
+    justify-content: center;
+    margin: 5rem auto;
+  }
 }
 /* LOGO SLUT */
 
+#header_flex {
+  display: flex;
+  justify-content: space-between;
+}
 body {
   background-color: #3e3e3e;
 }
@@ -76,6 +98,7 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 10%;
+    padding-top: 15%;
   }
   #video {
     display: flex;
