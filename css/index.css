@@ -270,7 +270,7 @@ footer img {
 /* Lykkehjul SLUT */
 
 /* Slideshow START */
-
+/* Credits: https://www.foolishdeveloper.com/2021/06/create-image-slider-using-html-css-and.html */
 .carousel-container {
   width: 600px;
   height: 400px;
@@ -361,6 +361,7 @@ footer img {
 /* Slideshow SLUT */
 
 /* Grain background START */
+/* Page-header er et grain overlay vi har lavet for at få lidt bevægelse på siden */
 .page-header {
   animation: grain 8s steps(10) infinite;
   background-image: url(https://fixthephoto.com/images/content/film-grain-overlay-texture-41611830312.jpg);
@@ -373,7 +374,8 @@ footer img {
   width: 300%;
   z-index: -10;
 }
-
+/* Her er bevægelserne for vores grain overlay skrevet. */
+/* AKA vores keyframe animation */
 @keyframes grain {
   0%,
   100% {
