@@ -335,15 +335,19 @@ footer img {
   background: rgba(255, 255, 255, 0.55);
   cursor: pointer;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5px;
+  background-color: #3d4b91;
+  color: rgb(255, 255, 255);
+  border: none;
+  font-family: apparat heavy;
 }
 .navigation .nav-btn:hover {
-  background: white;
+  background: rgb(126, 124, 201);
 }
 
 .carousel {
@@ -448,3 +452,28 @@ footer img {
   }
 }
 /* Grain background SLUT */
+
+/* Buttons */
+
+button {
+  font-size: 16px;
+  font-weight: 200;
+  padding: 13px 28px 13px;
+  margin-top: 30px;
+  border: 0;
+  background-color: #3d4b91;
+  color: white;
+  cursor: pointer;
+  font-family: apparat heavy;
+}
+
+button:hover {
+  transition: 1s;
+  background-color: #7181d3;
+}
+
+input {
+  background-color: #5d6691;
+  color: rgb(255, 255, 255);
+  border: none;
+}
