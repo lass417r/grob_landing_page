@@ -303,7 +303,6 @@ footer img {
   justify-content: center;
   align-items: center;
   padding: 5px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
 }
 .navigation .nav-btn:hover {
   background: white;
@@ -347,6 +346,65 @@ footer img {
     position: relative;
     margin: 0 auto;
   }
+
+  #spacer_slideshow {
+    display: block;
+    height: 4rem;
+  }
 }
 
+@media (min-width: 700px) {
+  #spacer_slideshow {
+    display: none;
+  }
+}
 /* Slideshow SLUT */
+
+/* Grain background START */
+.page-header {
+  animation: grain 8s steps(10) infinite;
+  background-image: url(https://fixthephoto.com/images/content/film-grain-overlay-texture-41611830312.jpg);
+  content: "";
+  height: 300%;
+  left: -50%;
+  opacity: 0.05;
+  position: fixed;
+  top: -110%;
+  width: 300%;
+  z-index: -10;
+}
+
+@keyframes grain {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0%);
+  }
+  70% {
+    transform: translate(0%, 15%);
+  }
+  80% {
+    transform: translate(3%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+}
+/* Grain background SLUT */
