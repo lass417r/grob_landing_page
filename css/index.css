@@ -294,11 +294,13 @@ footer img {
   height: 500px;
   width: 500px;
 }
+/* Vi har gjort brug af Z-index til at lægge elementerne ovenpå hinanden */
 #lykkehjul_skive {
   position: absolute;
   z-index: 3;
   transition: all ease 5s;
 }
+/* Dette gør at vi kan rotere den ene del, men at de stadigt ligger over hinanden. */
 #lykkehjul_pil {
   height: auto;
   height: auto;
